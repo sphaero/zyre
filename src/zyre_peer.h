@@ -62,13 +62,13 @@ int
     zyre_peer_send (zyre_peer_t *self, zre_msg_t **msg_p);
 
 //  Return peer identity string
-char *
+const char *
     zyre_peer_identity (zyre_peer_t *self);
-    
+
 //  Register activity at peer
 void
     zyre_peer_refresh (zyre_peer_t *self);
-    
+
 //  Return peer future evasive time
 int64_t
     zyre_peer_evasive_at (zyre_peer_t *self);
@@ -100,7 +100,7 @@ void
 //  Return peer ready state
 byte
     zyre_peer_ready (zyre_peer_t *self);
-    
+
 //  Set peer ready
 void
     zyre_peer_set_ready (zyre_peer_t *self, bool ready);

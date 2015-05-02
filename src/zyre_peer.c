@@ -226,7 +226,7 @@ zyre_peer_connected (zyre_peer_t *self)
 //  --------------------------------------------------------------------------
 //  Return peer identity string
 
-char *
+const char *
 zyre_peer_identity (zyre_peer_t *self)
 {
     assert (self);
