@@ -6,11 +6,12 @@ git clone --quiet --depth 1 https://github.com/zeromq/libzmq libzmq
 git clone --quiet --depth 1 https://github.com/zeromq/czmq czmq
 cd -
 
+cd $REPO_DIR/..
 git clone --quiet --depth 1 https://github.com/zeromq/zproject
 cd zproject
 export PATH=$PATH:`pwd`
 
-cd -
+cd $REPO_DIR/..
 git clone https://github.com/imatix/gsl.git
 cd gsl/src
 make
